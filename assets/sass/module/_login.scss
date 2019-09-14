@@ -1,0 +1,103 @@
+#login-pop {
+  max-width: 360px;
+  width: 360px;
+  .modal-title {
+    font-size: 16px;
+    font-family: 'nordiakregular';
+  }
+  .login-box {
+    margin: auto;
+    text-align: center;
+    .fb-btn {
+      background-color: #3B5998;
+      line-height: 40px;
+      width: 250px;
+      color: #fff;
+      font-size: 16px;
+      i {
+        margin-right: 10px;
+      }
+    }
+    .g-btn {
+      @extend .fb-btn;
+      background-color: #D62D20;
+      margin-top: 15px;
+    }
+    p.separator {
+      margin: 20px auto;
+      color: #9C9E9F;
+      font-size: 12px;
+    }
+    #login-form {
+      .form-group {
+        width: 250px;
+        line-height: 40px;
+        margin: 0 auto;
+        &:first-child {
+          position: relative;
+          top: 2px;
+        }
+        .icon-control {
+          input {
+            &:active, &:focus {
+              outline: none;
+            }
+          }
+          i {
+            color: #333;
+          }
+        }
+      }
+      .note {
+        margin: 20px auto;
+        span {
+          color: #9C9E9F;
+          font-weight: 600;
+          font-size: 12px;
+          a {
+            color: $theme-color;
+          }
+        }
+      }
+    }
+  }
+  .modal-footer {
+    margin-bottom: 10px;
+    .btn {
+      font-size: 14px;
+      margin-left: 5px;
+      &.btn-default {
+        border-color: #C6C7C8;
+      }
+    }
+  }
+}
+
+::-webkit-input-placeholder {
+ color: #C6C7C8;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+ color: #C6C7C8;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+ color: #C6C7C8;
+}
+
+:-ms-input-placeholder {
+ color: #C6C7C8;
+}
+
+.fancybox-title-float-wrap .child {
+  display:none;
+}
+
+// .fancybox-inner-c {
+//   width: 360px!important;
+// }
+
+// .fancybox-opened-c {
+//   top: 130px;
+//   width: 360px!important;
+// }

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Panel de control</title>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" >
+<link href="assets/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+
+<!--Start : Header-->
+<header>
+	<div class="left">
+		<ul>
+    	<li class="logo"><a href="index.html" title="deutsching"><img src="assets/images/logo.png" alt="deutsching" class="img-responsive"></a></li>
+      <li class="hide-sm"><a href="#" title="Profesores"><i class="fa fa-user"></i> Profesores</a></li>
+      <li class="hide-sm"><a href="#" title="Videoroom"><i class="fa fa-video-camera"></i> Videoroom</a></li>
+      <li class="hide-sm"><a href="#" title="Blog"><i class="fa fa-laptop"></i> Blog</a></li>
+    </ul>
+  </div>
+  <div class="right">
+		<ul>
+	  	<li class="mobile-menu"><a id="mobile-menu" href="javascript:;" title="Menu"><i class="fa fa-bars"></i> Menu</a>
+	    	<ul>
+	      	<li><a href="#" title="Profesores"><i class="fa fa-user"></i> Profesores</a></li>
+	        <li><a href="#" title="Videoroom"><i class="fa fa-video-camera"></i> Videoroom</a></li>
+	        <li><a href="#" title="Blog"><i class="fa fa-laptop"></i> Blog</a></li>
+	        <li><a href="#" title="Ayuda"><i class="fa fa-info"></i> Ayuda</a></li>
+	  			<li><a href="#" title="Email"><i class="fa fa-envelope-o"></i> Inbox</a></li>
+	      </ul>
+	    </li>
+  		<li class="hide-sm"><a title="Time">13:08</a></li>
+      <li class="hide-sm"><a href="#" title="Ayuda">Ayuda</a></li>
+      <li class="hide-sm"><a href="#" title="Email"><i class="fa fa-envelope-o"></i></a></li>
+      <li class="user"><a href="#"><i class="avatar"><img src="assets/images/natalia.jpg" alt="Claudia S." ></i>Claudia S. <i class="fa fa-angle-down"></i></a></li>
+      <li class="language"><a href="#">es</a></li>
+    </ul>
+  </div>
+</header>
+<!--End : Header-->
+
+<!-- Start: Control Panel -->
+<div class="cp">
+	<section id="inner-nav">
+		<div class="container">
+			<ul>
+				<li class="mobile-menu-inner"><a class="dash-menu-inner" href="javascript:;" title="Menu"><i class="fa fa-bars"></i> Menu</a>
+			  	<ul>
+			    	<li><a href="#" title="Panel de control">Panel de control</a></li>
+			      <li><a href="#" title="Perfil">Perfil</a></li>
+			      <li><a href="#" title="Calendario"> Calendario</a></li>
+			      <li><a href="#" title="Clases">Clases</a></li>
+						<li><a href="#" title="Mensajes y contactos">Mensajes y contactos</a></li>
+						<li><a href="#" title="Mi cuenta">Mi cuenta</a></li>
+						<li><a href="#" title="Aula">Aula</a></li>
+			    </ul>
+			  </li>
+				<li class="active hide-sm"><a href="#">Panel de control</a></li>
+				<li class="hide-sm"><a href="#">Perfil</a></li>
+				<li class="hide-sm"><a href="#">Calendario</a></li>
+				<li class="hide-sm"><a href="#">Clases</a></li>
+				<li class="hide-sm"><a href="#">Mensajes y contactos</a></li>
+				<li class="hide-sm"><a href="#">Mi cuenta</a></li>
+				<li class="hide-sm"><a href="#">Aula</a></li>
+			</ul>
+		</div>
+	</section>
+
+  <!--Start : Profile Section-->
+  <section id="profile">
+  	<div class="container">
+    	<div class="detail">
+      	<div class="image">
+					<img src="assets/images/user_icon.png" alt="user" class="img-responsive" />
+				</div>
+        <div class="profile-detail">
+        	<div class="name">
+						<h1>Schön dich wiederzusehen, Claudia!</h1>
+					</div>
+          <div class="mailling-detail">
+          	<div class="add ">
+							<ul>
+								<li>Ranking<span class="pink-clr">&nbsp;</span></li>
+								<li>0 horas impartidas este mes</li>
+							</ul>
+            </div>
+          </div>
+        </div>
+        <div class="profile-review">
+        	<h5>Siguiente sesión</h5>
+          <p><i class="fa fa-hourglass-half"></i> sin programar</p>
+          <p class="avail">Sesiones instantáneas</p>
+          <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+            <label class="onoffswitch-label" for="myonoffswitch">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
+            </label>
+            <div class="time-wrap" style="display: none;">
+            	<div class="time-show">
+            		<span class="title">Disponible hasta<span class="close"></span></span>
+            		<ul class="controls">
+            			<li class="controls__control">
+            				<span class="controls__control-up"></span>
+            				<span class="controls__control--hours">17</span>
+            				<span class="controls__control-down"></span> </li>
+            			<li class="controls__control--separator">
+            				<span class="controls__control--separator-inner">:</span></li>
+          				<li class="controls__control">
+          					<span class="controls__control-up"></span>
+          					<span class="controls__control--minutes">30</span>
+          					<span class="controls__control-down"></span>
+        					</li>
+    						</ul>
+          		</div>
+            </div>
+          </div>
+        </div>
+      </div><!--Detail-->
+    </div>
+  </section>
+
+	<!-- Full width ribben section-->
+	<section id="sub-menu">
+  	<div class="container">
+    	<div class="pull-left">
+      	<a href="#" class=""><i class="fa fa-envelope-o"></i> Mensajes</a>
+      </div>
+      <div class="pull-right">
+        <a href="#stu-confirm" class="btn btn-default student-dash">Comprobar conexión</a>
+          <!--Start : Connection Check Message -->
+        <div id="stu-confirm" class="modal-popup" style="display: none;">
+      		<div class="modal-title">Comprobar conexion</div>
+	        <div class="modal-body">
+	        	<div class="connection-modalbody">
+		        	<div class="rocket-box">
+		          	<h4>Test De Velocidad</h4>
+		  					<img src="assets/images/icon1.png">
+								<a class="btn btn-secondary" href="#">Comenzar</a>
+		          </div>
+
+		  				<div class="webcam-box">
+		          	<h4>Test De Velocidad</h4>
+		  					<img src="assets/images/icon2.png">
+								<a class="btn btn-secondary" href="#">Comenzar</a>
+		        	</div>
+	        	</div>
+	    		</div>
+	        <div class="modal-footer clear">
+	          <a href="#" class="btn btn-default">Cerrar</a>
+	        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+	<!--- End Ribben Section -->
+
+	<!-- Start: Welcome Message Box -->
+	<section class="welcome-msg">
+		<div class="container">
+			<div class="msg-box">
+				<h3>¡Hola Claudia! Bienvenida a deutsching</h3>
+				<p>Desde aquí podrás consultar tus reservas y revisar tus mensajes, avisos y notificaciones para estar al tanto de tu actividad en Deutsching. </p>
+				<p>Antes de hacer visible tu perfil profesional en deutsching debes completar esos pasos:</p>
+				<p class="heading">Completa tu perfil</p>
+				<p>Sube una foto y un video de presentación, describe tu perfil profesional e indicia tus condiciones para empezar a dar clases.</p>
+				<p class="heading">Prepara tu calendario</p>
+				<p>Indica qué días y horas vas a impartir clases durante un mínimo de tiempo de un mes que te entren reservas</p>
+				<p class="heading">Descubre cómo se consiguen y se imparten clases en deutsching</p>
+				<p>Prepárate para recibir solicitutes de reservas de clases, gestionarlas e impartir clases con deutsching. <a href="javascript:void();">Mira un breve video</a>.</p>
+				<p class="heading">Elige tus opciones de pago</p>
+				<p>Indica la forma en que podremos pagarte por tus servicios de enseñanza.</p>
+				<p class="heading">Realiza el test de velocidad</p>
+				<p>Para comenzar a impartir clases es necesario realizar una prueba de velocidad de conexión</p>
+				<div class="need-help">
+					<a href="javascript:void();">¿Necesitas ayuda?</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End: Welcome Message Box -->
+
+	<!-- Start: Request Section -->
+	<section class="request">
+		<div class="container">
+			<div class="req-content">
+				<p>¡Invita a tus amigos y consigue créditos Deutsching!</p>
+				<img src="assets/images/btn-request.png">
+			</div>
+		</div>
+	</section>
+	<!-- End: Request Section -->
+
+	<!-- User Notification Section -->
+	<section id="notifications">
+		<div class="container">
+			<div class="header">
+
+				<!-- Start Tab section -->
+				<div class="message-box">
+					<ul class="tabs">
+						<li class="tab-link" data-tab="tab-1">0 Noticaciones</li>
+						<li class="tab-link current" data-tab="tab-2">4 Avisos</li>
+						<li class="tab-link" data-tab="tab-3">0 Mensajes</li>
+					</ul>
+				</div>
+				<!-- End tab section -->
+			</div>
+
+			<!-- Start: Classes Tab section content -->
+			<div class="tab-content-u current tab-u-1">
+				<div id="message-container">
+					<div class="notification-item tab-content tab-1">
+						<!-- <div class="item">
+							<img src="assets/images/video.png" alt="" />
+							<span class="msg"><p>Felicidades, Claudia! Has subido dos puestos en el ranking de profesores Deutschings esta semana</p></span>
+							<span class="note">Hace 2 días</span>
+						</div>
+						<div class="item">
+							<img src="assets/images/video.png" alt="" />
+							<span class="msg"><p>Felicidades, Claudia! Has sido elegida para impartir el curso grupal A2.1 "Unter den Linden". El curso comen...</p></span>
+							<span class="note">Hace 3 días</span>
+						</div> -->
+					</div>
+
+					<div class="avisos-item tab-content current tab-2">
+						<div class="item">
+							<span class="msg"><p><i class="fa fa-exclamation-circle"></i>Por favor, confirma tu dirección de correo electrónico haciendo clic en el enlace que acabamos de...</p></span>
+							<span class="note">Hoy</span>
+						</div>
+
+						<div class="item">
+							<span class="msg"><p><i class="fa fa-exclamation-circle"></i>Debes realizar el test de velocidad para comenzar a impartir clases.</P></span>
+							<span class="note">Hoy</span>
+						</div>
+
+						<div class="item">
+							<span class="msg"><p><i class="fa fa-exclamation-circle"></i>Conecta tu cuenta deutsching con facebook, google y linkedin para crear enlaces con tus contactos...</p></span>
+							<span class="note">Hoy</span>
+						</div>
+
+						<div class="item">
+							<span class="msg"><p><i class="fa fa-exclamation-circle"></i>Pide a tus antiguos alumnos o compañeros profesores que te escriban una referencia para inspirar...</P></span>
+							<span class="note">Hoy</span>
+						</div>
+					</div>
+
+					<div class="message-item tab-content tab-3">
+						<!-- <div class="item">
+							<img src="assets/images/natalia-small.jpg" alt="" />
+							<h4>Natalia Vega Bach</h4>
+							<span class="msg"><p><i class="fa fa-share-square-o"></i>Lo siento, Natalia. No puedo realizar una prueba de nivel contigo en este momento...</p></span>
+							<span class="note">15:02</span>
+						</div>
+
+						<div class="item">
+							<img src="assets/images/nikolas.jpg" alt="" />
+							<h4>Nicolás Domínguez</h4>
+							<span class="msg"><p>Me gustaria realizar una prueba de nivel oral con usted.</p></span>
+							<span class="note">3 May</span>
+						</div> -->
+					</div>
+				</div>
+			</div>
+			<!-- End: Classes Tab section content -->
+			<!-- Start: Activities Tab section content -->
+			<div class="tab-content-u tab-u-2">
+				<div id="message-container">
+					<div class="notification-item tab-content tab-1">
+						<!-- <div class="item">
+							<img src="assets/images/video.png" alt="" />
+							<span class="msg"><p>Felicidades, Claudia! Has subido dos puestos en el ranking de profesores Deutschings esta semana</p></span>
+							<span class="note">Hace 2 días</span>
+						</div>
+						<div class="item">
+							<img src="assets/images/video.png" alt="" />
+							<span class="msg"><p>Felicidades, Claudia! Has sido elegida para impartir el curso grupal A2.1 "Unter den Linden". El curso comen...</p></span>
+							<span class="note">Hace 3 días</span>
+						</div> -->
+					</div>
+
+					<div class="avisos-item tab-content current tab-2">
+						<div class="item">
+							<span class="msg"><p><i class="fa fa-exclamation-circle"></i>Por favor, confirma tu dirección de correo electrónico haciendo clic en el enlace que acabamos de...</p></span>
+							<span class="note">Hoy</span>
+						</div>
+
+						<div class="item">
+							<span class="msg"><p><i class="fa fa-exclamation-circle"></i>Debes realizar el test de velocidad para comenzar a impartir clases.</P></span>
+							<span class="note">Hoy</span>
+						</div>
+
+						<div class="item">
+							<span class="msg"><p><i class="fa fa-exclamation-circle"></i>Conecta tu cuenta deutsching con facebook, google y linkedin para crear enlaces con tus contactos...</p></span>
+							<span class="note">Hoy</span>
+						</div>
+
+						<div class="item">
+							<span class="msg"><p><i class="fa fa-exclamation-circle"></i>Pide a tus antiguos alumnos o compañeros profesores que te escriban una referencia para inspirar...</P></span>
+							<span class="note">Hoy</span>
+						</div>
+					</div>
+
+					<div class="message-item tab-content tab-3">
+						<!-- <div class="item">
+							<img src="assets/images/natalia-small.jpg" alt="" />
+							<h4>Natalia Vega Bach</h4>
+							<span class="msg"><p><i class="fa fa-share-square-o"></i>Lo siento, Natalia. No puedo realizar una prueba de nivel contigo en este momento...</p></span>
+							<span class="note">15:02</span>
+						</div>
+
+						<div class="item">
+							<img src="assets/images/nikolas.jpg" alt="" />
+							<h4>Nicolás Domínguez</h4>
+							<span class="msg"><p>Me gustaria realizar una prueba de nivel oral con usted.</p></span>
+							<span class="note">3 May</span>
+						</div> -->
+					</div>
+				</div>
+			</div>
+			<!-- End: Activities Tab section content -->
+		</div>
+	</section>
+	<!-- End Notification section -->
+
+	<!--- start user section -->
+	<section id="activity">
+		<div class="container">
+			<!-- Start page link section -->
+			<div class="page-link">
+				<ul class="tabs-u">
+				  <li class="tab-link current" data-tab="tab-u-1"><i class="fa fa-list-alt"></i><span class="act">Sesiones</span></li>
+				  <li>/</li>
+				  <li class="tab-link" data-tab="tab-u-2"><span class="act">Actividades</span> <span>4</span></li>
+				</ul>
+			</div>
+			<!-- End page link section -->
+
+			<div class="note">
+				<p>No tienes clases programadas</p>
+			</div>
+
+			<!-- Start: Classes --
+			<div class="tab-content-u current tab-u-1">
+				<div class="classes">
+					<div class="user">
+						<div class="user-info">
+							<h4>Hoy</h4>
+							<p><i class="fa fa-user"></i>Natalia V.</p>
+						</div>
+						<div class="user-detail">
+							<img src="assets/images/avatar.jpg" alt="" />
+							<span class="pink-bg">
+								<p>26 mar</p>
+								<p>17:30 - 18:45</p>
+							</span>
+						</div>
+					</div>
+
+					<div class="user">
+						<div class="user-info">
+							<h4>Manana</h4>
+							<p><i class="fa fa-users"></i>Alexanderpatz 1.2</p>
+						</div>
+						<div class="user-detail">
+							<img src="assets/images/sunset.jpg" alt="" />
+							<span class="blue-bg">
+								<p>27 mar</p>
+								<p>17:30 - 18:45</p>
+							</span>
+						</div>
+					</div>
+
+					<div class="user">
+						<div class="user-info">
+							<h4>Dentro de 2 días</h4>
+							<p><i class="fa fa-user"></i>Natalia V.</p>
+						</div>
+						<div class="user-detail">
+							<img src="assets/images/avatar.jpg" alt="" />
+							<span class="pink-bg">
+								<p>28 mar</p>
+								<p>17:30 - 18:45</p>
+							</span>
+						</div>
+					</div>
+
+					<div class="user">
+						<div class="user-info">
+							<h4>La próxima semana</h4>
+							<p><i class="fa fa-life-bouy"></i>Nicolás Domínguez</p>
+						</div>
+						<div class="user-detail">
+							<img src="assets/images/nikolas.jpg" alt="" />
+							<span class="no-bg">
+								<p>3 abr</p>
+								<p>17:30 - 18:45</p>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End: Classes -->
+
+			<!-- Start: Activities --
+			<div class="tab-content-u tab-u-2">
+				<div class="activities">
+					<div class="user">
+						<div class="user-info">
+							<h4>14 mar 14:00</h4>
+							<p>"Beschreibung einer..."</p>
+						</div>
+						<div class="user-detail">
+							<img src="assets/images/avatar.jpg" alt="" />
+							<span class="pink-bg">
+								<p>26 mar</p>
+								<p>17:30 - 18:45</p>
+							</span>
+						</div>
+						<div class="msg">
+							<p>Caduca el 15 mar 14:00</p>
+						</div>
+					</div>
+
+					<div class="user">
+						<div class="user-info">
+							<h4>15 mar 18:30</h4>
+							<p>"Diàlogo"</p>
+						</div>
+						<div class="user-detail">
+							<img src="assets/images/sunset.jpg" alt="" />
+							<span class="blue-bg">
+								<p>27 mar</p>
+								<p>17:30 - 18:45</p>
+							</span>
+						</div>
+						<div class="msg">
+							<p>Caduca el 16 mar 12:30</p>
+						</div>
+					</div>
+
+					<div class="user">
+						<div class="user-info">
+							<h4>7 mar 14:00</h4>
+							<p>Sin título</p>
+						</div>
+						<div class="user-detail">
+							<img src="assets/images/avatar.jpg" alt="" />
+							<span class="pink-bg">
+								<p>28 mar</p>
+								<p>17:30 - 18:45</p>
+							</span>
+						</div>
+						<div class="msg">
+							<p>Caduca el 17 mar</p>
+						</div>
+					</div>
+
+					<div class="user">
+						<div class="user-info">
+							<h4>21 mar 10:00</h4>
+							<p>Sin título</p>
+						</div>
+						<div class="user-detail">
+							<img src="assets/images/nikolas.jpg" alt="" />
+							<span class="no-bg">
+								<p>3 abr</p>
+								<p>17:30 - 18:45</p>
+							</span>
+						</div>
+						<div class="msg">
+							<p>Link Caduca el 17 mar</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End: Activities --
+			<div class="btn-link" id="btn-link">
+				<a href="#">Ir a mi calendario</a>
+			</div> -->
+		</div>
+	</section>
+	<!-- End user section -->
+
+	<!-- Start chart section -->
+	<section id="stats">
+		<div class="container">
+			<div class="heading">
+				<p><i class="fa fa-bar-chart"></i> Estadísticas</p>
+			</div>
+
+			<div class="calendar">
+				<p>Tu actividad en:</P>
+				<div class="form-group margin0">
+					<select class="form-control select-item">
+							<option>March 2015</option>
+							<option>April 2015</option>
+							<option>Mai 2015</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="visits">
+				<div class="item">
+					<p class="heading">Visitas</p>
+					<ul class="visits-list">
+						<li class="gray-fill"><i class="fa fa-circle"></i><span>135</span><a href="#">visitas de perﬁl</a></li>
+						<li class="pink-fill"><i class="fa fa-circle"></i><span>27</span><a href="#">horas reservadas</a></li>
+						<li class="pink-o"><i class="fa fa-circle-o"></i><span>2</span><a href="#">sesiones de prueba</a></li>
+						<li class="light-gray-o"><i class="fa fa-circle-o"></i><span>1</span><a href="#">pruebas orales</a></li>
+					</ul>
+				</div>
+
+				<div class="chart">
+					<img src="assets/images/chart_empty.jpg" class="img-responsive" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="ranks">
+		<div class="container">
+			<div class="ranking-heading">
+				<p>Ranking</p>
+			</div>
+
+			<div class="ranking">
+				<div class="item">
+					<ul>
+						<li><span class="green-clr">0</span><br><span>Horas reservadas</span></li>
+						<li><span class="green-clr">0</span><br><span>Horas no canceladas</span></li>
+						<li><span class="green-clr">-%</span><br><span>Ratio de sesiones recibidas</span></li>
+					</ul>
+				</div>
+
+				<div class="item">
+					<ul>
+						<li><span class="green-clr">0</span><br><span>Activaciones de sesión instantánea</span></li>
+						<li><span class="black-clr">0</span><br><span>Horas de sesión instantánea</span></li>
+						<li><span class="black-clr">0 h/activación</span><br><span>Ratio de sesiones instántaneas</span></li>
+					</ul>
+				</div>
+
+				<div class="item">
+					<ul>
+						<li><span class="green-clr">1</span><br><span>Log-ins al día</span></li>
+						<li><span class="pink-clr">0</span><br><span>Actualizaciones de calendario</span></li>
+						<li><span class="green-clr">-%</span><br><span>Puntualidad</span></li>
+					</ul>
+				</div>
+
+				<div class="item">
+					<div class="msg-container">
+						<p class="msg">Quiero escalar puestos en el ranking Deutsching para conseguir más alumnos</p>
+						<button class="btn btn-secondary">Más información</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+</div>
+<!-- End: Control Panel -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="assets/js/jquery.fancybox.js" ></script>
+<script src="assets/js/jquery-ui.js"></script>
+<script src="assets/js/script.js" ></script>
+
+</body>
+</html>

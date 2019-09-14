@@ -1,0 +1,800 @@
+.myaccount {
+  .container {
+    width: 80%;
+    @media (max-width: 768px) {
+      width: 95%;
+    }
+  }
+
+  .tooltip {
+    color: #333;
+    margin-left: 5px;
+    position: relative;
+    &:hover {
+      .tooltiptxt {
+        visibility: visible;
+      }
+    }
+    .tooltiptxt {
+      visibility: hidden;
+      width: 160px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 7px;
+      position: absolute;
+      z-index: 1;
+      font-size: 12px;
+      p {
+        font-size: 12px;
+      }
+    }
+    .tooltiptxtsmall {
+      width: 100px;
+    }
+    .tooltiptxt-top {
+      @extend .tooltiptxt;
+      bottom: 100%;
+      left: 50%;
+      margin-left: -80px;
+    }
+    .tooltiptxt-right {
+      @extend .tooltiptxt;
+      top: -5px;
+      left: 105%;
+    }
+  }
+
+  input[type="checkbox"] {
+    display: none;
+
+    + label {
+      cursor: pointer;
+
+      &::before {
+        content: "\f096";
+        display: inline-block;
+        font: 14px/1em 'FontAwesome';
+        height: 10px;
+        margin: 0 10px 0 0;
+        padding:0;
+        vertical-align: sub;
+        width: 10px;
+        color: #333;
+      }
+    }
+
+    &:checked {
+      + label {
+        &::before {
+          background: #fff;
+          color: #333;
+          content: "\f046";
+          text-align: center;
+          font-family: 'FontAwesome';
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  section.left-sidebar {
+    margin: 60px auto 30px;
+
+    .tab-content {
+      display: none;
+
+      &.current {
+        display: inherit;
+      }
+    }
+
+    .side-bar {
+      margin-top: 10px;
+      width: 18%;
+      ul {
+        margin-left: -10px;
+        margin-right: 30px;
+        li {
+          line-height: 35px;
+          border-bottom: 1px solid #ECEDED;
+          margin-left: -8px;
+          padding-left: 15px;
+          cursor: pointer;
+          color: #707173;
+          font-weight: 600;
+          font-size: 14px;
+          letter-spacing: 0.05em;
+          &.current {
+            color: #333;
+            ul > li {
+              color: #333;
+            }
+          }
+        }
+      }
+    }
+
+    .primary-content {
+      width: 81%;
+
+      .change-password {
+        .sec-title {
+          margin-bottom: 20px;
+          .title {
+            color: #707173;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 0.05em;
+          }
+        }
+
+        .acc-form {
+          .form-items {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: column wrap;
+            flex-flow: column wrap;
+            justify-content: flex-start;
+            margin-left: 10px;
+
+            .item {
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-flex-flow: row wrap;
+              flex-flow: row wrap;
+              justify-content: flex-start;
+
+              .input-title {
+                width: 160px;
+                p {
+                  line-height: 40px;
+                  font-size: 13px;
+                  font-weight: 600;
+                }
+              }
+              .form-group {
+                margin-bottom: 15px;
+              }
+            }
+          }
+          .form-btn {
+            margin-top: 150px;
+            float: right;
+            .btn {
+              padding: 10px 15px;
+            }
+          }
+        }
+      }
+
+      .notifications {
+        .sec-item {
+          .sec-title {
+            .title {
+              color: #707173;
+              font-weight: 600;
+              font-size: 14px;
+              letter-spacing: 0.05em;
+              margin-bottom: 10px;
+            }
+          }
+          .form-group {
+            width: 30%;
+            line-height: 20px;
+            display: inline-flex;
+          }
+          .check-box {
+            display: inline-flex;
+            line-height: 20px;
+            .checktxt {
+              color: #333;
+              font-family: 'nordiakmedium';
+              font-weight: 600;
+              font-size: 14px;
+              margin-left: 5px;
+              cursor: pointer;
+            }
+          }
+          .checkboxes {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: column wrap;
+            flex-flow: column wrap;
+            justify-content: flex-start;
+
+            .check-box {
+              margin-bottom: 10px;
+            }
+          }
+        }
+        .form-btn {
+          margin-top: 15px;
+          float: right;
+          .btn {
+            padding: 10px 15px;
+          }
+        }
+        ::-webkit-input-placeholder {
+          color: #333;
+          font-family: 'nordiakmedium';
+        }
+        :-ms-input-placeholder {
+          color: #333;
+          font-family: 'nordiakmedium';
+        }
+        :-moz-placeholder {
+          color: #333;
+          font-family: 'nordiakmedium';
+        }
+        ::-moz-placeholder {
+          color: #333;
+          font-family: 'nordiakmedium';
+        }
+      }
+
+      .social-net {
+        @extend .deactivate-account;
+        .note {
+          margin-left: 10px;
+          margin-bottom: 15px;
+          p {
+            color: #707173;
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+        .form-group {
+          label {
+            color: #333!important;
+            font-family: 'nordiakmedium';
+            font-weight: 600;
+          }
+        }
+      }
+
+      .payment-method {
+        @extend .deactivate-account;
+        .form-group {
+          width: 65%;
+          .form-control {
+            margin-right: 10px;
+          }
+        }
+        .edit-acc {
+          margin-bottom: 25px;
+          .btn {
+            padding: 10px 40px;
+            border: 1px solid #ECEDED;
+            color: #9C9E9F;
+            font-weight: 600;
+          }
+          .card {
+            display: inline-flex;
+            margin-left: 20px;
+            font-size: 14px;
+            color: #707173;
+            span {
+              margin-right: 15px;
+              color: #707173;
+              font-weight: 600;
+            }
+          }
+        }
+        .note {
+          color: #707173;
+          font-size: 14px;
+          font-weight: 600;
+          margin-left: 15px;
+          span {
+            color: $theme-color;
+          }
+        }
+        .reco-rules {
+          margin-top: 25px;
+          .title {
+            color: #707173;
+            margin-bottom: 25px;
+          }
+          .rules {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+
+            .rules-item {
+              &:nth-child(n+2) {
+                margin-left: 15px;
+              }
+              &:last-child {
+                margin-left: 25px;
+                align-self: flex-end;
+              }
+              &:nth-child(-n+3) {
+                background-color: #F6F6F6;
+                border: 1px solid #ECEDED;
+                padding: 8px;
+                width: 22%;
+              }
+              p {
+                margin-bottom: 8px;
+                font-size: 14px;
+                color: #707173;
+                font-weight: 600;
+                a {
+                  color: $theme-color;
+                  font-size: 14px;
+                  font-weight: 600;
+                }
+              }
+              .btn {
+                padding: 10px 15px;
+              }
+            }
+          }
+        }
+      }
+
+      .transaction-section {
+        .tab-tr-content {
+          display: none;
+
+          &.current {
+            display: inherit;
+          }
+        }
+
+        .sec-title {
+          .transact-tabs {
+            li {
+              display: inline-block;
+              margin-right: 15px;
+              margin-bottom: 20px;
+              line-height: 25px;
+              cursor: pointer;
+              color: #707173;
+              font-weight: 600;
+              font-size: 14px;
+              letter-spacing: 0.05em;
+              &.current {
+                color: #333;
+                border-bottom: 4px solid #333;
+              }
+            }
+          }
+        }
+
+        .payment-made {
+          margin-bottom: 25px;
+          .filter-bar {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+
+            .form-group {
+              width: 25%;
+              margin-right: 13px;
+              &:nth-child(2) {
+                width: 15%;
+              }
+              select {
+                color: #333;
+                font-family: 'nordiakmedium';
+                font-weight: 500;
+                option {
+                  color: #333;
+                  font-family: 'nordiakmedium';
+                  font-weight: 500;
+                }
+              }
+            }
+          }
+
+          .body {
+            p.empty-tb {
+              font-size: 16px;
+              font-weight: 600;
+              margin-top: 15px;
+            }
+            table, tbody, tfoot, tr, td, th {
+              font-family: 'nordiakregular';
+            }
+            thead {
+              font-family: 'nordiakmedium';
+              border-bottom: 1px solid #ECEDED;
+              tr {
+                th {
+                  color: #707173;
+                  padding: 5px 0px;
+                  letter-spacing: 0.03em;
+                  &:first-child {
+                    width: 120px;
+                  }
+                  &:nth-child(2) {
+                    width: 70px;
+                  }
+                  &:nth-child(3) {
+                    width: 200px;
+                  }
+                  &:last-child {
+                    width: 120px;
+                    text-align: right;
+                  }
+                }
+              }
+            }
+            tbody {
+              border-bottom: 1px solid #ECEDED;
+              tr {
+                border-bottom: 1px solid #ECEDED;
+                &:last-child {
+                  border: none;
+                }
+                td {
+                  vertical-align: top;
+                  padding: 15px 0px;
+                  &:first-child {
+                    width: 120px;
+                  }
+                  &:nth-child(2) {
+                    width: 70px;
+                  }
+                  &:nth-child(3) {
+                    width: 200px;
+                  }
+                  &:last-child {
+                    width: 120px;
+                    text-align: right;
+                  }
+                  p {
+                    color: #333;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    &.pink-clr {
+                      color: $theme-color;
+                    }
+                    &.pre-amount {
+                      color: #707173;
+                    }
+                    &.pre-booking {
+                      @extend .pre-amount;
+                      margin-bottom: 10px;
+                    }
+                    &.card-detail {
+                      margin-top: 15px;
+                    }
+                    &.unconfirm-class {
+                      color: $theme-color;
+                      margin-top: 40px;
+                    }
+                    &.inner-total {
+                      margin-top: 15px;
+                    }
+                    span {
+                      margin-left: 5px;
+                    }
+                  }
+                  a.btn {
+                    padding: 6px 35px;
+                    margin-top: 25px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .payment-pending {
+          @extend .payment-made;
+        }
+        .rebate-bonus {
+          @extend .payment-made;
+          .body {
+            table {
+              thead {
+                tr {
+                  th {
+                    &:last-child {
+                      text-align: left;
+                    }
+                  }
+                }
+              }
+              tbody {
+                tr {
+                  td {
+                    &:last-child {
+                      text-align: left;
+                    }
+                    a.btn {
+                      margin-top: 35px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        // Professor Transaction
+        .income-received {
+          @extend .payment-made;
+          .body {
+            .total-amount {
+              background: #F6F6F6;
+              border: 1px solid #ECEDED;
+              float: right;
+              padding: 10px;
+              width: 180px;
+              span {
+                color: #333;
+                font-weight: 600;
+                line-height: 25px;
+                &.amt {
+                  float: right;
+                }
+              }
+            }
+          }
+          .disclaimer {
+            margin-top: 90px;
+            p {
+              font-size: 14px;
+              font-weight: 600;
+              color: #707173;
+              a {
+                color: $theme-color;
+              }
+            }
+          }
+        }
+        .income-requested {
+          @extend .payment-made;
+          thead {
+            tr {
+              th {
+                &:first-child {
+                  width: 160px;
+                }
+                &:nth-child(2) {
+                  width: 130px!important;
+                }
+                &:nth-child(3) {
+                  width: 50px!important;
+                }
+                &:nth-child(4) {
+                  width: 230px!important;
+                }
+                &:last-child {
+                  width: 80px!important;
+                  text-align: right;
+                }
+              }
+            }
+          }
+          tbody {
+            tr {
+              td {
+                &:first-child {
+                  width: 160px;
+                }
+                &:nth-child(2) {
+                  width: 130px!important;
+                }
+                &:nth-child(3) {
+                  width: 50px!important;
+                }
+                &:nth-child(4) {
+                  width: 230px!important;
+                }
+                &:last-child {
+                  width: 80px!important;
+                  text-align: right;
+                }
+              }
+            }
+          }
+          .body {
+            .foot-btn {
+              float: right;
+              a {
+                display: inline-block;
+                line-height: 25px;
+                background-color: #FF6892;
+                border-color: #FF6892;
+                color: #fff;
+                margin-right: -4px;
+                &.active {
+                  background-color: $theme-color;
+                }
+                i {
+                  margin-right: 10px;
+                }
+              }
+              .total-amount {
+                display: inline-block;
+                background: #F6F6F6;
+                border: 1px solid #ECEDED;
+                padding: 10px;
+                width: 180px;
+                span {
+                  color: #333;
+                  font-weight: 600;
+                  line-height: 18px;
+                  &.amt {
+                    float: right;
+                  }
+                }
+              }
+              .foot-note {
+                margin-top: 10px;
+                .item {
+                  .title {
+                    color: #707173;
+                    width: 168px;
+                    font-size: 14px;
+                    display: inline-block;
+                    line-height: 25px;
+                  }
+                  .value {
+                    @extend .title;
+                    color: #333;
+                    font-weight: 600;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .income-expected {
+          @extend .payment-made;
+          @extend .income-requested;
+          .foot-btn {
+            a.btn {
+              padding: 6px 50px;
+            }
+            .warning {
+              display: inline-block;
+              padding-right: 10px;
+              vertical-align: middle;
+              p {
+                color: #707173;
+                font-size: 14px;
+                text-align: right;
+                line-height: 15px;
+                i, span {
+                  color: $theme-color;
+                }
+              }
+            }
+          }
+        }
+        .income-unconfirmed {
+          @extend .payment-made;
+          @extend .income-received;
+          @extend .income-requested;
+        }
+      }
+
+      .deactivate-account {
+        .sec-title {
+          margin-bottom: 20px;
+          .title {
+            color: #707173;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 0.05em;
+          }
+        }
+        .form-group {
+          display: inline-flex;
+          line-height: 20px;
+          label {
+            color: #707173;
+            margin-left: 5px;
+            font-size: 14px;
+            font-family: 'nordiakmedium';
+          }
+        }
+        .form-btn {
+          margin-top: 150px;
+          float: right;
+          .btn {
+            padding: 10px 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#add-account, #add-account2 {
+  .modal-title {
+    font-size: 16px;
+    font-family: 'nordiakmedium';
+  }
+  .modal-body {
+    padding-right: 80px;
+    .addaccount-modalbody {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: column wrap;
+      flex-flow: column wrap;
+      justify-content: flex-start;
+      margin-bottom: 20px;
+
+      .item {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+
+        &:last-child {
+          .form-group {
+            &:last-child {
+              width: 30%;
+            }
+          }
+        }
+
+        .form-group {
+          width: 48%;
+          &:first-child {
+            margin-right: 15px;
+          }
+        }
+      }
+      .form-group {
+        label {
+          font-size: 16px;
+          font-family: 'nordiakregular';
+          sup {
+            color: $theme-color;
+          }
+        }
+      }
+
+      .err-msg {
+        margin-top: 15px;
+        font-size: 12px;
+        color: #707173;
+        i {
+          color: $theme-color;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .modal-footer {
+    background-color: #ECEDED;
+    .btn-secondary {
+      font-size: 16px;
+    }
+  }
+}

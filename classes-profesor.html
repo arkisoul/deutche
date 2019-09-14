@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Classes</title>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" >
+<link href="assets/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<!--Start : Header-->
+<header>
+	<div class="left">
+		<ul>
+			<li class="logo"><a href="index.html" title="deutsching"><img src="assets/images/logo.png" alt="deutsching" class="img-responsive"></a></li>
+		  <li class="hide-sm"><a href="#" title="Profesores"><i class="fa fa-user"></i> Profesores</a></li>
+		  <li class="hide-sm"><a href="#" title="Videoroom"><i class="fa fa-video-camera"></i> Videoroom</a></li>
+		  <li class="hide-sm"><a href="#" title="Blog"><i class="fa fa-laptop"></i> Blog</a></li>
+		</ul>
+	</div>
+  <div class="right">
+		<ul>
+	  	<li class="mobile-menu"><a id="mobile-menu" href="javascript:;" title="Menu"><i class="fa fa-bars"></i> Menu</a>
+	    	<ul>
+	      	<li><a href="#" title="Profesores"><i class="fa fa-user"></i> Profesores</a></li>
+	        <li><a href="#" title="Videoroom"><i class="fa fa-video-camera"></i> Videoroom</a></li>
+	        <li><a href="#" title="Blog"><i class="fa fa-laptop"></i> Blog</a></li>
+	        <li><a href="#" title="Ayuda"><i class="fa fa-info"></i> Ayuda</a></li>
+	  			<li><a href="#" title="Email"><i class="fa fa-envelope-o"></i> Inbox</a></li>
+	      </ul>
+	    </li>
+  		<li class="hide-sm"><a title="Time">13:08</a></li>
+      <li class="hide-sm"><a href="#" title="Ayuda">Ayuda</a></li>
+      <li class="hide-sm"><a href="#" title="Email"><i class="fa fa-envelope-o"></i></a></li>
+      <li class="user"><a href="#"><i class="avatar"><img src="assets/images/natalia.jpg" alt="Claudia S." ></i>Claudia S.<i class="fa fa-angle-down"></i></a></li>
+      <li class="language"><a href="#">es</a></li>
+    </ul>
+  </div>
+</header>
+<!--End : Header-->
+
+<!-- Start: Classes -->
+<div class="classes">
+	<section id="inner-nav">
+		<div class="container">
+			<ul>
+				<li class="mobile-menu-inner"><a class="dash-menu-inner" href="javascript:;" title="Menu"><i class="fa fa-bars"></i> Menu</a>
+					<ul>
+						<li><a href="#" title="Panel de control">Panel de control</a></li>
+            <li><a href="#" title="Perfil">Perfil</a></li>
+            <li><a href="#" title="Calendario"> Calendario</a></li>
+            <li><a href="#" title="Clases">Clases</a></li>
+            <li><a href="#" title="Mensajes y contactos">Mensajes y contactos</a></li>
+            <li><a href="#" title="Mi cuenta">Mi cuenta</a></li>
+            <li><a href="#" title="Aula">Aula</a></li>
+					</ul>
+				</li>
+				<li class="hide-sm"><a href="#">Panel de control</a></li>
+				<li class="hide-sm"><a href="#">Perfil</a></li>
+				<li class="hide-sm"><a href="#">Calendario</a></li>
+				<li class="active hide-sm"><a href="#">Clases</a></li>
+				<li class="hide-sm"><a href="#">Mensajes y contactos</a></li>
+				<li class="hide-sm"><a href="#">Mi cuenta</a></li>
+				<li class="hide-sm"><a href="#">Aula</a></li>
+			</ul>
+		</div>
+	</section>
+
+  <!--Start : Profile Section-->
+  <section id="profile">
+  	<div class="container">
+    	<div class="detail">
+  			<div class="session">
+  				<p>Siguiente sesión</p>
+  				<span>-2h 17’ 31’’</span>
+  			</div>
+				<div class="user">
+					<img src="assets/images/avatar.jpg" alt="Natalia" />
+					<p>Natalia V.,</p>
+					<p class="pink-clr" style="display:none">super-prof #9,7</p>
+				</div>
+				<div class="time prof">
+					<p>Sab 30 may, 17:00 - 17:45</p>
+        </div>
+				<div class="option">
+					<i class="fa fa-calendar"></i>
+					<i class="fa fa-video-camera disable"></i>
+				</div>
+			</div>
+    </div>
+  </section>
+  <!-- End: Profile Section -->
+
+	<section class="left-sidebar">
+		<div class="container">
+      <!-- Start: Side Bar -->
+			<div class="side-bar">
+				<ul class="accord">
+					<li class="tab-link" data-tab="tab-c-1">Próximas sesiones
+						<ul class="sub-menu tab-content tab-c-1">
+							<li>Individuales</li>
+							<li>Packs</li>
+							<li>Grupales</li>
+						</ul>
+					</li>
+
+					<li class="tab-link" data-tab="tab-c-2">Sesiones sin horario
+						<ul class="sub-menu tab-content tab-c-2">
+							<li>Individuales</li>
+							<li>Packs</li>
+							<li>Grupales</li>
+						</ul>
+					</li>
+
+					<li class="tab-link current" data-tab="tab-c-3">Sesiones impartidas
+						<ul class="sub-menu tab-content current tab-c-3">
+							<li>Individuales</li>
+							<li>Packs</li>
+							<li>Grupales</li>
+						</ul>
+					</li>
+
+          <li class="sub-menu nav-tab" style="display:none;">Preferencsias</li>
+				</ul>
+			</div>
+      <!-- End: Side Bar -->
+
+			<!-- Start: Primary Content -->
+      <div class="primary-content">
+
+        <!-- Start: Session Next -->
+        <div class="tab-content tab-c-1">
+          <div class="session-next">
+            <div class="header">
+              <div class="session-detail">
+                <span class="session-title">Próximas sesiones</span>
+                <span><i class="fa fa-arrow-right"></i></span>
+                <span>Todas</span>
+              </div>
+              <div class="tab-pagination">
+                <span><a href="javascript:void();"><i class="fa fa-angle-left"></i></a></span>
+                <span><a href="javascript:void();" class="active">1</a></span>
+                <span><a href="javascript:void();">2</a></span>
+                <span><a href="javascript:void();">3</a></span>
+                <span><a href="javascript:void();"><i class="fa fa-angle-right"></i></a></span>
+              </div>
+            </div>
+
+            <div class="body">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Fecha y hora</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Duración</th>
+                    <th scope="col">Profesor</th>
+                    <th scope="col">Detalles</th>
+                   </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><i class="fa fa-cubes"></i></td>
+                    <td>
+                      <p class="user-name">Sábado</p>
+                      <p>22 may</p>
+                      <p>17:00 - 17:45</p>
+                    </td>
+
+                    <td>
+                      <p>Programada</p>
+                    </td>
+
+                    <td>
+                      <p>45 min</p>
+                      <p>[Pack 3/6]</p>
+                    </td>
+
+                    <td>
+                      <img src="assets/images/natalia.jpg" alt="natalia" />
+                      <span>
+                        <p>Claudia S.</p>
+                        <p class="pink-clr">superprof </p>
+                        <p class="pink-clr">#9,7</p>
+                      </span>
+                    </td>
+
+                    <td>
+                      <ul>
+                        <li><a href="#">Modificar o cancelar</a></li>
+                        <li><a href="#">Ver confirmación</a></li>
+                        <li><a href="#">Informar sobre un problema</a></li>
+                        <li><a href="#">Historial de mensajes</a></li>
+                        <li><a href="#">Ver recibo</a></li>
+                      </ul>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><i class="fa fa-users"></i></td>
+                    <td>
+                      <p class="user-name">Unter den Linden</p>
+                      <p>A1.2</p>
+                      <p>3 jun - 28 jun</p>
+                      <p>L, X, V</p>
+                      <p>9:30 - 12:40</p>
+                    </td>
+
+                    <td>
+                      <p>Prerreservado</p>
+                    </td>
+
+                    <td>
+                      <p>60 SG x 45 min</p>
+                      <p>(4 semanas intensivo) </p>
+                    </td>
+
+                    <td>
+                      <img src="assets/images/avatar.jpg" alt="avatar" />
+                      <span>
+                        <p>Julia H.</p>
+                        <p class="pink-clr">superprof</p>
+                        <p class="pink-clr">#9,7</p>
+                      </span>
+                    </td>
+
+                    <td>
+                      <ul>
+                        <li><a href="#">Completar pago</a></li>
+                        <li><a href="#">Ver confirmación</a></li>
+                        <li><a href="#">Informar sobre un problema</a></li>
+                        <li><a href="#">Ver recibo</a></li>
+                        <li><a href="#"></a></li>
+                      </ul>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><i class="fa fa-cubes"></i></td>
+                    <td>
+                      <p>Lunes</p>
+                      <p>25 jun</p>
+                      <p>17:00 - 17:45</p>
+                    </td>
+
+                    <td>
+                      <p>Cancelada</p>
+                    </td>
+
+                    <td>
+                      <p>45 min</p>
+                      <p>[Pack 3/6]</p>
+                    </td>
+
+                    <td>
+                      <img src="assets/images/natalia.jpg" alt="natalia" />
+                      <span>
+                        <p>Claudia S.</p>
+                        <p class="pink-clr">superprof </p>
+                        <p class="pink-clr">#9,7</p>
+                      </span>
+                    </td>
+
+                    <td>
+                      <ul>
+                        <li><a href="#">Ver cancelación</a></li>
+                        <li><a href="#">Informar sobre un problema</a></li>
+                        <li><a href="#">Historial de mensajes</a></li>
+                        <li><a href="#">Ver bonus</a></li>
+                      </ul>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><i class="fa fa-user"></i></td>
+                    <td>
+                      <p class="user-name">Viernes</p>
+                      <p>21 jun</p>
+                      <p>17:00 - 17:45</p>
+                    </td>
+
+                    <td>
+                      <p>Programada</p>
+                    </td>
+
+                    <td>
+                      <p>45 min</p>
+                    </td>
+
+                    <td>
+                      <img src="assets/images/natalia.jpg" alt="natalia" />
+                      <span>
+                        <p>Claudia S.</p>
+                        <p class="pink-clr">superprof </p>
+                        <p class="pink-clr">#9,7</p>
+                      </span>
+                    </td>
+
+                    <td>
+                      <ul>
+                        <li><a href="#">Modificar o cancelar</a></li>
+                        <li><a href="#">Ver confirmación</a></li>
+                        <li><a href="#">Informar sobre un problema</a></li>
+                        <li><a href="#">Historial de mensajes</a></li>
+                        <li><a href="#">Ver recibo</a></li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- End: Session Next -->
+
+        <!-- Start: Session No Schedule -->
+        <div class="tab-content tab-c-2">
+          <div class="session-no-schedule">
+            <div class="header">
+              <div class="session-detail">
+                <span class="session-title">Sesiones sin horario</span>
+                <span><i class="fa fa-arrow-right"></i></span>
+                <span>Todas</span>
+              </div>
+              <div class="tab-pagination">
+                <span><a href="javascript:void();"><i class="fa fa-angle-left"></i></a></span>
+                <span><a href="javascript:void();" class="active">1</a></span>
+                <span><a href="javascript:void();">2</a></span>
+                <span><a href="javascript:void();">3</a></span>
+                <span><a href="javascript:void();"><i class="fa fa-angle-right"></i></a></span>
+              </div>
+            </div>
+
+            <div class="body">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Fecha y hora</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Duración</th>
+                    <th scope="col">Profesor</th>
+                    <th scope="col">Detalles</th>
+                   </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><i class="fa fa-cubes"></i></td>
+                    <td>
+                      <p class="user-name">Caduca</p>
+                      <p>12 sep 2015</p>
+                    </td>
+
+                    <td>
+                      <p>Sin horario</p>
+                    </td>
+
+                    <td>
+                      <p>4 x 60 min</p>
+                      <p>[Pack 6]</p>
+                    </td>
+
+                    <td>
+                      <img src="assets/images/natalia.jpg" alt="natalia" />
+                      <span>
+                        <p>Claudia S.</p>
+                        <p class="pink-clr">superprof </p>
+                        <p class="pink-clr">#9,7</p>
+                      </span>
+                    </td>
+
+                    <td>
+                      <ul>
+                        <li><a href="#">Elegir horario o cancelar</a></li>
+                        <li><a href="#">Ver confirmación</a></li>
+                        <li><a href="#">Informar sobre un problema</a></li>
+                        <li><a href="#">Historial de mensajes</a></li>
+                        <li><a href="#">Ver recibo</a></li>
+                      </ul>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><i class="fa fa-users"></i></td>
+                    <td>
+                      <p class="user-name">Alexanderplatz 1.2</p>
+                      <p>Sin caducidad</p>
+                      <p>(Fin curso: 12 sep 2015)</p>
+                    </td>
+
+                    <td>
+                      <p>Pendiente</p>
+                    </td>
+
+                    <td>
+                      <p>2 x 45 min</p>
+                      <p>2 SG</p>
+                    </td>
+
+                    <td>
+                      <img src="assets/images/avatar.jpg" alt="avatar" />
+                      <span>
+                        <p>Julia H.</p>
+                        <p class="pink-clr">superprof</p>
+                        <p class="pink-clr">#9,7</p>
+                      </span>
+                    </td>
+
+                    <td>
+                      <ul>
+                        <li><a href="#">Ver ficha</a></li>
+                        <li><a href="#">Ver confirmación</a></li>
+                        <li><a href="#">Informar sobre un problema</a></li>
+                        <li><a href="#">Historial forum</a></li>
+                        <li><a href="#">Ver recibo</a></li>
+                      </ul>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><i class="fa fa-cubes"></i></td>
+                    <td>
+                      <p class="user-name">Caduca</p>
+                      <p>22 may 2015</p>
+                    </td>
+
+                    <td>
+                      <p>Sin horario</p>
+                    </td>
+
+                    <td>
+                      <p>60 min</p>
+                      <p>[Pack 6]</p>
+                    </td>
+
+                    <td>
+                      <img src="assets/images/natalia.jpg" alt="natalia" />
+                      <span>
+                        <p>Claudia S.</p>
+                        <p class="pink-clr">superprof </p>
+                        <p class="pink-clr">#9,7</p>
+                      </span>
+                    </td>
+
+                    <td>
+                      <ul>
+                        <li><a href="#">Responder</a></li>
+                        <li><a href="#">Ver cancelación</a></li>
+                        <li><a href="#">Informar sobre un problema</a></li>
+                        <li><a href="#">Historial de mensajes</a></li>
+                        <li><a href="#">Ver recibo</a></li>
+                      </ul>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><i class="fa fa-cube"></i></td>
+                    <td>
+                      <p class="user-name">Caduca</p>
+                      <p>14 sep 2015</p>
+                    </td>
+
+                    <td>
+                      <p>Sin horario</p>
+                    </td>
+
+                    <td>
+                      <p>30 min</p>
+                    </td>
+
+                    <td>
+                      <img src="assets/images/natalia.jpg" alt="natalia" />
+                      <span>
+                        <p>Claudia S.</p>
+                        <p class="pink-clr">superprof </p>
+                        <p class="pink-clr">#9,7</p>
+                      </span>
+                    </td>
+
+                    <td>
+                      <ul>
+                        <li><a href="#">Elegir horario o cancelar</a></li>
+                        <li><a href="#">Informar sobre un problema</a></li>
+                        <li><a href="#">Historial de mensajes</a></li>
+                        <li><a href="#">Ver recibo</a></li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- End: Session No Schedule -->
+
+        <!-- Start: Session Received -->
+        <div class="tab-content current tab-c-3">
+          <div class="session-taught-prof">
+          	<div class="header">
+              <div class="session-detail">
+                <span class="session-title">Sesiones impartidas</span>
+                <span><i class="fa fa-arrow-right"></i></span>
+                <span>Todas</span>
+              </div>
+              <div class="tab-pagination">
+                <span><a href="javascript:void();"><i class="fa fa-angle-left"></i></a></span>
+                <span><a href="javascript:void();" class="active">1</a></span>
+                <span><a href="javascript:void();">2</a></span>
+                <span><a href="javascript:void();">3</a></span>
+                <span><a href="javascript:void();"><i class="fa fa-angle-right"></i></a></span>
+              </div>
+            </div>
+
+    				<div class="body">
+    					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    						<thead>
+    							<tr>
+                    <th scope="col">&nbsp;</th>
+    								<th scope="col">Fecha y hora</th>
+    								<th scope="col">Estado</th>
+    								<th scope="col">Duración</th>
+    								<th scope="col">Profesor</th>
+    								<th scope="col">Detalles</th>
+                  </tr>
+    						</thead>
+    						<tbody>
+                  <tr>
+                    <td><i class="fa fa-cubes"></i></td>
+                    <td>
+                      <p class="user-name">Sábado</p>
+                      <p>27 may</p>
+                      <p>17:00 - 18:45</p>
+                    </td>
+
+                    <td>
+                      <p>Tarea entregada</p>
+                    </td>
+
+                    <td>
+                      <p>45 min</p>
+                      <p>[Pack 3/6]</p>
+                    </td>
+
+                    <td>
+                      <img src="assets/images/Foto-evaluación-2-(50x50).jpg" alt="Nicolás" />
+                      <span>
+                        <p>Nicolás D.</p>
+                      </span>
+                    </td>
+
+                    <td>
+                      <ul class="prof">
+                        <li><a href="#">Ir a actividad de sesión</a></li>
+                        <li><a href="#">Ver confirmación</a></li>
+                        <li><a href="#">Informar sobre un problema</a></li>
+                        <li><a href="#">Historial de mensajes</a></li>
+                        <li><a href="#">Ver recibo</a></li>
+                      </ul>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><i class="fa fa-user"></i></td>
+                    <td>
+                      <p>Lunes</p>
+                      <p>25 may</p>
+                      <p>17:00 - 17:45</p>
+                    </td>
+
+                    <td>
+                      <p>Tarea asignada</p>
+                    </td>
+
+                    <td>
+                      <p>45 min</p>
+                    </td>
+
+                    <td>
+                      <img src="assets/images/Foto-evaluación-3-(50x50).jpg" alt="avatar" />
+                      <span>
+                        <p>Michael B.</p>
+                      </span>
+                    </td>
+
+                    <td>
+                      <ul class="prof">
+                        <li><a href="#">Ir a actividad de sesión</a></li>
+                        <li><a href="#">Ver confirmación</a></li>
+                        <li><a href="#">Informar sobre un problema</a></li>
+                        <li><a href="#">Historial de mensajes</a></li>
+                        <li><a href="#">Ver recibo</a></li>
+                      </ul>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><i class="fa fa-users"></i></td>
+                    <td>
+                      <p class="user-name">Alexanderplatz 1.2</p>
+                      <p>Lunes</p>
+                      <p>25 may</p>
+                      <p>17:00-17:45</p>
+                    </td>
+
+                    <td>
+                      <p>Sin tarea</p>
+                    </td>
+
+                    <td>
+                      <p>2 x 5 min</p>
+                      <p>[SG 3,4/48]</p>
+                    </td>
+
+                    <td>
+                      <img src="assets/images/Foto-evaluación-4-(50x50).jpg" alt="natalia" />
+                      <span>
+                        <p>Nicolás D.</p>
+                        <p class="pink-clr">Natalia V.</p>
+                        <p>Michael B.</p>
+                        <p>Martina H.</p>
+                      </span>
+                    </td>
+
+                    <td>
+                      <ul class="prof">
+                        <li><a href="#">Ir a actividad de sesión</a></li>
+                        <li><a href="#">Ver confirmación</a></li>
+                        <li><a href="#">Informar sobre un problema</a></li>
+                        <li><a href="#">Historial forum</a></li>
+                        <li><a href="#">Ver recibo</a></li>
+                      </ul>
+                    </td>
+                  </tr>
+    						</tbody>
+    					</table>
+    				</div>
+    			</div>
+        </div>
+        <!-- End: Session Received -->
+      </div>
+      <!-- End: Primary Content -->
+		</div>
+	</section>
+</div>
+<!-- End: Classes -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="assets/js/jquery.fancybox.js" ></script>
+<script src="assets/js/script.js" ></script>
+
+</body>
+</html>

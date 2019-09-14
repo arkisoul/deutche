@@ -1,0 +1,54 @@
+/*Import comp*/
+@import "compass/reset";
+@import "components/variable";
+@import "components/grid";
+@import "components/colors";
+@import "components/font";
+@import "components/base";
+@import "components/forms";
+@import "components/modal-popup";
+@import "components/calender";
+@import "components/header";
+@import "components/inner-nav";
+
+/*payment*/
+@import "module/payment";
+@import "components/fancybox";
+
+/*Teacher*/
+@import "module/teacher";
+@import "module/teacher-process";
+
+/*Professor*/
+@import "module/professor";
+@import "module/professor-search";
+
+/*Student Dashboard*/
+@import "module/student-dashboard";
+
+/*Teacher Dashboard*/
+@import "module/teacher-dashboard";
+
+/*Classes*/
+@import "module/classes";
+
+/*Activities*/
+@import "module/activities";
+
+/*Login*/
+@import "module/login";
+
+/*My Account*/
+@import "module/myaccount";
+
+/*Class File*/
+@import "module/classfile";
+
+/*Sign Up*/
+@import "module/signup";
+@import "module/become-teacher";
+
+/*I have a Problem*/
+@import "module/ihaveaproblem";
+
+/*globle css*/

@@ -1,0 +1,303 @@
+.become-teacher {
+  .container {
+    width: 80%;
+    @media (max-width: 768px) {
+      width: 95%;
+    }
+  }
+
+  .head {
+    background: url('../images/bg-head.jpg') center center no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+
+    .bg-overlay {
+      background-color: rgba(0,0,0, 0.7);
+      height: 600px;
+      width: 100%;
+      text-align: center;
+      padding: 80px 0px 35px;
+
+      .banner {
+        height: 180px;
+        width: 100%;
+        background-color: $theme-color;
+        margin: auto auto 100px;
+        padding: 50px 0px;
+        .title {
+          font-size: 44px;
+          color: #fff;
+          margin-bottom: 20px;
+          i {
+            font-size: 26px;
+          }
+        }
+        .subtitle {
+          color: #333;
+          font-size: 24px;
+        }
+      }
+      .banner-bottom {
+        .title, .subtitle {
+          color: #fff;
+        }
+        .title {
+          margin-bottom: 35px;
+        }
+        .subtitle {
+          font-size: 18px;
+        }
+        a.btn {
+          margin: 20px auto 35px;
+          padding: 12px 20px;
+          font-size: 16px;
+        }
+        i {
+          display: inline-block;
+          color: #fff;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .deutcheintro {
+    background-color: #ECEDED;
+
+    .content {
+      width: 80%;
+      margin: auto;
+      padding: 25px 0px;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+
+      .list-item {
+        width: 35%;
+        ul {
+          li {
+            line-height: 25px;
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: $theme-color;
+            list-style-type: disc;
+            list-style-position: outside;
+            span {
+              color: #333;
+              font-size: 16px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+      .item {
+        figcaption {
+          background-color: $theme-color;
+          color: #fff;
+          font-size: 16px;
+          font-family: 'nordiakmedium';
+          text-align: center;
+          line-height: 50px;
+          position: relative;
+          top: -3px;
+        }
+      }
+    }
+  }
+
+  .whydeutch {
+    padding: 25px 0px 35px;
+    .heading, .subheading {
+      text-align: center;
+    }
+    .heading {
+      margin-bottom: 15px;
+    }
+    .reasons {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto auto 25px;
+
+      .item {
+        width: 31%;
+        text-align: center;
+        margin: auto 5px;
+        img {
+          margin-bottom: 10px;
+        }
+        .title {
+          color: #333;
+          font-weight: 600;
+          line-height: 20px;
+          margin-bottom: 5px;
+        }
+        .subtitle {
+          @extend .title;
+          color: #707173;
+        }
+      }
+    }
+  }
+
+  .deutsching {
+    background-color: #333;
+    .container {
+      width: 60%;
+      padding: 45px 0px 35px;
+
+      .sec-heading {
+        text-align: center;
+        .heading {
+          color: #fff;
+          margin-bottom: 35px;
+          line-height: 30px;
+          display: inline-block;
+          position: relative;
+          &::after {
+            content: '';
+            background-color: #FF1C5A;
+            position: absolute;
+            width: 150px;
+            height: 2px;
+            bottom: -5px;
+            left: 15px;
+          }
+        }
+      }
+
+      .content {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .item {
+          &:nth-child(-n+4) {
+            margin-bottom: 15px;
+          }
+          .title {
+            color: #fff;
+            line-height: 20px;
+            margin-bottom: 15px;
+            i.fa-play {
+              color: $theme-color;
+              margin-right: 8px;
+            }
+          }
+          .txt {
+            color: #fff;
+            font-size: 14px;
+            line-height: 16px;
+          }
+          a {
+            color: $theme-color;
+            font-size: 10px;
+            line-height: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .beingateacher {
+    @extend .deutsching;
+    background-color: #fff;
+
+    .sec-heading {
+      .heading {
+        color: #333!important;
+        font-weight: 600;
+        &::after {
+          width: 230px!important;
+          left: 45px!important;
+        }
+      }
+    }
+
+    .item {
+      &:nth-child(-n+5) {
+        margin-bottom: 15px!important;
+      }
+      .title {
+        color: #333!important;
+        font-weight: 600;
+      }
+      .txt {
+        color: #333!important;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .moneymoney {
+    @extend .deutsching;
+
+    .sec-heading {
+      .heading {
+        &::after {
+          width: 165px!important;
+          left: 50px!important;
+        }
+      }
+    }
+  }
+
+  .footer {
+    background-color: $theme-color;
+    .container {
+      width: 70%;
+      padding: 30px 0px 50px;
+
+      .columnRow {
+        .column {
+          .title {
+            font-size: 20px;
+            margin-bottom: 35px;
+            line-height: 22px;
+            color: #6D1630;
+            font-weight: 600;
+          }
+          ul {
+            li {
+              line-height: 20px;
+
+              &.social-links {
+                margin-top: 25px;
+                i {
+                  font-size: 34px;
+                  color: #6D1630;
+                  margin-right: 10px;
+                }
+              }
+              a {
+                font-weight: 600;
+                font-size: 16px;
+                color: #6D1630;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

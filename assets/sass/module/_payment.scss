@@ -1,0 +1,240 @@
+/*User*/
+.user-block {
+	width:100%;
+	max-width:500px;
+	margin:0px auto;
+	padding:25px 15px;	
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row;
+    justify-content: space-around;
+    align-items:center;
+	
+	@media (max-width:479px){
+		display: block;
+    display: block;
+    display: block;
+    display: block;
+    display: block;
+		text-align:center;
+	}
+	
+	
+	.user-image {
+		width:125px;
+		height:125px;
+		overflow:hidden;
+		@include border-radius(50%);		
+		
+		@media (max-width:479px){
+			margin:0px auto 20px;
+		}
+	}
+	
+	.text {
+		
+		h1 {
+			font-size:32px;
+			color:#333;
+			line-height:30px;
+			padding-bottom:15px;
+		}
+		p {
+			font-size:20px;
+			color:#707173;
+		}
+	}
+}
+
+/*payment Option*/
+
+.payment-block {
+	width:100%;
+	max-width:730px;
+	margin:0px auto;
+	padding:25px 15px;	
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row;
+    justify-content: space-around;
+    align-items:top;
+	
+	@media (max-width:700px){
+		display: block;
+		display: block;
+		display: block;
+		display: block;
+		display: block;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.cart-block {
+		width:300px;
+		padding:12px;
+		border:1px solid #9C9E9F;
+		
+		@media (max-width:700px){
+			margin:0px auto 30px;
+			max-width:100%;
+		}
+		
+		h1 {
+			font-family: 'nordiakregular';
+			display:block;
+			border-bottom:1px solid #C6C7C8;
+			color:#707173;	
+			padding-bottom:10px;		
+			margin-bottom:5px;
+			font-size:14px;			
+			
+			.fa {
+				color:#000;				
+			}
+		}
+		
+		.table {
+			margin-bottom:25px;
+			tr {
+				td {
+					font-size:16px;
+					line-height:18px;
+					padding:5px 5px;
+					vertical-align:top;
+					color:#333;
+					
+					&:last-child {
+						font-size:20px;
+						text-align:right;
+						white-space:nowrap;
+					}
+					span.taxes {
+						font-size:12px;						
+						color:#9C9E9F;
+						display:block;
+						padding:3px 0px;
+					}
+					
+					.fa {
+						color:$second-color;
+					}
+				}
+			}
+			tfoot {
+				tr {
+					td{
+						border-top:1px solid #ddd;
+						padding-top:12px;
+					}
+				}
+			}			
+		}
+		
+		.add-bonus {
+			margin-bottom:10px;
+			a.title {
+				font-size:12px;						
+				color:#9C9E9F;
+			}
+		}
+		
+		.terms-block {
+			margin:15px -12px;
+			padding:12px;
+			border-top:1px solid #9C9E9F;
+			border-bottom:1px solid #9C9E9F;
+			
+			p {
+				font-size:12px;						
+				color:#9C9E9F;
+				line-height:18px;
+			}
+		}
+		
+		.schedules-block {
+			
+			.note {
+				font-size:12px;						
+				color:#9C9E9F;			
+			}
+		}
+	}
+	
+	.payment-form {
+		width:400px;
+		padding-left:30px;
+		border-left:1px solid #ECEDED;
+		
+		@media (max-width:700px){
+			margin:0px auto 0px;
+			padding-left:0px;
+			border-left:0px solid #ECEDED;
+			max-width:100%;
+		}
+		
+		.exp {
+			width:130px;
+			float:left;
+			margin-right:15px;
+		}
+		.cvc {
+			width:100px;
+			float:left;
+		}
+		
+		.payment-icon {
+			clear:both;
+			width:100%;
+			color:#707173;
+			font-size:25px;
+			margin-bottom:20px;
+			
+			i {
+				margin-right:7px;
+			}
+		}
+		
+		.term-agree {
+			margin:30px 0px;
+			border-top:1px solid #ECEDED;
+			padding-top:15px;
+			font-size:13px;						
+			color:#9C9E9F;
+			line-height:17px;
+			
+			span {
+				color:$theme-color;
+			}
+		}
+		
+		.reselect-time {
+			font-size:14px;						
+			color:#9C9E9F;
+		}
+	}		
+}
+
+/*Modalbox*/
+.payment-modalbody {
+	text-align:center;
+	padding-top:40px;
+	h1 {
+		display:block;
+		margin-bottom:20px;
+	}
+	p {
+		display:block;
+		margin-bottom:30px;
+		
+		&.payment-text {
+			color:$theme-color;
+			margin-top:90px;
+		}
+	}
+}

@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>My Account</title>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" >
+<link href="assets/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<!--Start : Header-->
+<header>
+	<div class="left">
+		<ul>
+			<li class="logo"><a href="index.html" title="deutsching"><img src="assets/images/logo.png" alt="deutsching" class="img-responsive"></a></li>
+		  <li class="hide-sm"><a href="#" title="Profesores"><i class="fa fa-user"></i> Profesores</a></li>
+		  <li class="hide-sm"><a href="#" title="Videoroom"><i class="fa fa-video-camera"></i> Videoroom</a></li>
+		  <li class="hide-sm"><a href="#" title="Blog"><i class="fa fa-laptop"></i> Blog</a></li>
+		</ul>
+	</div>
+  <div class="right">
+		<ul>
+	  	<li class="mobile-menu"><a id="mobile-menu" href="javascript:;" title="Menu"><i class="fa fa-bars"></i> Menu</a>
+	    	<ul>
+	      	<li><a href="#" title="Profesores"><i class="fa fa-user"></i> Profesores</a></li>
+	        <li><a href="#" title="Videoroom"><i class="fa fa-video-camera"></i> Videoroom</a></li>
+	        <li><a href="#" title="Blog"><i class="fa fa-laptop"></i> Blog</a></li>
+	        <li><a href="#" title="Ayuda"><i class="fa fa-info"></i> Ayuda</a></li>
+	  			<li><a href="#" title="Email"><i class="fa fa-envelope-o"></i> Inbox</a></li>
+	      </ul>
+	    </li>
+  		<li class="hide-sm"><a title="Time">13:08</a></li>
+      <li class="hide-sm"><a href="#" title="Ayuda">Ayuda</a></li>
+      <li class="hide-sm"><a href="#" title="Email"><i class="fa fa-envelope-o"></i></a></li>
+      <li class="user"><a href="#"><i class="avatar"><img src="assets/images/avatar.jpg" alt="Natalia V." ></i> Natalia V. <i class="fa fa-angle-down"></i></a></li>
+      <li class="language"><a href="#">es</a></li>
+    </ul>
+  </div>
+</header>
+<!--End : Header-->
+
+<!-- Start: Classes -->
+<div class="myaccount">
+	<section id="inner-nav">
+		<div class="container">
+			<ul>
+				<li class="mobile-menu-inner"><a class="dash-menu-inner" href="javascript:;" title="Menu"><i class="fa fa-bars"></i> Menu</a>
+					<ul>
+						<li><a href="#" title="Panel de control">Panel de control</a></li>
+            <li><a href="#" title="Perfil">Perfil</a></li>
+            <li><a href="#" title="Calendario"> Calendario</a></li>
+            <li><a href="#" title="Clases">Clases</a></li>
+            <li><a href="#" title="Mensajes y contactos">Mensajes y contactos</a></li>
+            <li><a href="#" title="Mi cuenta">Mi cuenta</a></li>
+            <li><a href="#" title="Aula">Aula</a></li>
+					</ul>
+				</li>
+				<li class="hide-sm"><a href="#">Panel de control</a></li>
+				<li class="hide-sm"><a href="#">Perfil</a></li>
+				<li class="hide-sm"><a href="#">Calendario</a></li>
+				<li class="hide-sm"><a href="#">Clases</a></li>
+				<li class="hide-sm"><a href="#">Mensajes y contactos</a></li>
+				<li class="active hide-sm"><a href="#">Mi cuenta</a></li>
+				<li class="hide-sm"><a href="#">Aula</a></li>
+			</ul>
+		</div>
+	</section>
+
+ 	<section class="left-sidebar">
+		<div class="container">
+			<!-- Start: Side Bar -->
+			<div class="side-bar">
+				<ul class="acc-tabs">
+					<li class="tab-link current" data-tab="tab-ma-1">Contraseña</li>
+					<li class="tab-link" data-tab="tab-ma-2">Notificaciónes</li>
+					<li class="tab-link" data-tab="tab-ma-3">Redes Sociales</li>
+					<li class="tab-link" data-tab="tab-ma-4">Método de pago</li>
+					<li class="tab-link" data-tab="tab-ma-5">Transacciones</li>
+					<li class="tab-link" data-tab="tab-ma-6">Desactivar cuenta</li>
+				</ul>
+			</div>
+			<!-- End: Side Bar -->
+
+			<div class="primary-content my-account">
+
+				<!-- Start: Password Content -->
+				<div class="change-password tab-content current tab-ma-1">
+					<div class="sec-title">
+						<p class="title">Modiﬁca tu contraseña</p>
+					</div>
+					<form action="" target="" name="passwordchange" id="form-pass" class="acc-form">
+						<div class="form-items">
+							<div class="item">
+								<div class="input-title">
+									<p>Contraseña actual</p>
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" name="pass-old" required>
+								</div>
+							</div>
+							<div class="item">
+								<div class="input-title">
+									<p>Nueva contraseña</p>
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" name="pass-new" required>
+								</div>
+							</div>
+							<div class="item">
+								<div class="input-title">
+									<p>Confirmar contraseña</p>
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" name="pass-new-confirm" required>
+								</div>
+							</div>
+						</div>
+						<div class="form-btn">
+							<a type="submit" class="btn btn-secondary" href="#">Guardar contraseña</a>
+						</div>
+					</form>
+				</div>
+				<!-- End: Password Content -->
+
+				<!-- Start: Notification method Content -->
+				<div class="notifications tab-content tab-ma-2">
+					<form action="" target="" name="notification-form" class="acc-form">
+							<div class="sec-item">
+								<div class="sec-title">
+									<p class="title">Correo electrónico</p>
+								</div>
+								<div class="form-group">
+									<input type="text" placeholder="schwabschwab@gmail.com" class="form-control">
+								</div>
+								<div class="check-box">
+									<input type="checkbox" id="emailnote" name="emailnoti" checked>
+									<label class="checktxt" for="emailnote">Habilitar notificaciónes por correo electrónico</label>
+								</div>
+							</div>
+							<div class="sec-item">
+								<div class="sec-title">
+									<p class="title">Teléfono</p>
+								</div>
+								<div class="form-group">
+									<input type="text" placeholder="+34 632 14 78 56" class="form-control">
+								</div>
+								<div class="check-box">
+									<input type="checkbox" id="mobilnote" name="mobnoti" checked>
+									<label class="checktxt" for="mobilnote">Habilitar notificaciónes mediante SMS</label>
+								</div>
+							</div>
+							<div class="sec-item">
+								<div class="sec-title">
+									<p class="title">Recibir notificaciónes cuando:</p>
+								</div>
+								<div class="checkboxes">
+									<div class="check-box">
+										<input type="checkbox" id="term1" name="terms" checked>
+										<label class="checktxt" for="term1">Reciba un mensaje de un alumno</label>
+									</div>
+									<div class="check-box">
+										<input type="checkbox" id="term2" name="terms" checked>
+										<label class="checktxt" for="term2">Mi alumno haya modificado o cancelado una sesión</label>
+									</div>
+									<div class="check-box">
+										<input type="checkbox" id="term3" name="terms" checked>
+										<label class="checktxt" for="term3">Reciba una notificación de Deutsching.com</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-btn">
+								<a type="submit" class="btn btn-secondary" href="#">Guardar cambios</a>
+							</div>
+					</form>
+				</div>
+				<!-- End: Notification Content -->
+
+				<!-- Start: Social Networks Content -->
+				<div class="social-net tab-content tab-ma-3">
+					<div class="sec-title">
+						<p class="title">Mostrar mis redes sociales </p>
+					</div>
+					<div class="note">
+						<p>Conectar esta cuenta a tus redes sociales te ayuda a contactar con profesores y otros usuarios de nuestra comunidad existentes en tus circulos. Los perfiles asociados a tu cuenta apareceran en tu pagina de Perfil</p>
+					</div>
+					<div class="form-group">
+						<input type="checkbox" id="use-soc" name="use-social" checked>
+						<label for="use-soc">Mostrar a otros usuarios de Deutsching las redes sociales asociadas utilizará esta numero para efectuar reembolsos a tu cuenta si fuera necesario a esta cuenta</label>
+					</div>
+					<div class="form-btn">
+						<a class="btn btn-secondary" href="#">Guardar cambios</a>
+					</div>
+				</div>
+				<!-- End: Social Networks Content -->
+
+				<!-- Start: Payment Method -->
+				<div class="payment-method tab-content tab-ma-4">
+					<div class="sec-title">
+						<p class="title">Transferencia bancaria</p>
+					</div>
+					<div class="edit-acc">
+						<a href="#add-account" class="btn btn-default add-bank-account">Añadir cuenta</a>
+						<!--Start: Add Bank Account: Screen 1 -->
+						<div id="add-account" class="modal-popup" style="display: none;">
+						  <div class="modal-title">Añadir cuenta bancaria</div>
+						  <div class="modal-body">
+						    <div class="addaccount-modalbody">
+						      <div class="form-group">
+						        <label>Dirección<sup>*</sup></label>
+						        <input type="text" name="address" class="form-control" required>
+						      </div>
+						      <div class="item">
+						      	<div class="form-group">
+						      	  <label>Ciudad<sup>*</sup></label>
+						      	  <input type="text" name="city" class="form-control" required>
+						      	</div>
+						      	<div class="form-group">
+						      	  <label>Provincia</label>
+						      	  <input type="text" name="province" class="form-control" required>
+						      	</div>
+						      </div>
+						      <div class="item">
+						      	<div class="form-group">
+						      	  <label>País<sup>*</sup></label>
+						      	  <input type="text" name="country" class="form-control" required>
+						      	</div>
+						      	<div class="form-group">
+						      	  <label>Código Postal<sup>*</sup></label>
+						      	  <input type="text" name="postal-code" class="form-control" required>
+						      	</div>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="modal-footer">
+						    <a href="#add-account2" class="btn btn-secondary add-bank-account2">Siguiente</a>
+						    <!--Start: Add Bank Account: Screen 2 -->
+						    <div id="add-account2" class="modal-popup" style="display: none;">
+						      <div class="modal-title">Añadir cuenta bancaria</div>
+						      <div class="modal-body">
+						        <div class="addaccount-modalbody">
+						          <div class="form-group">
+						            <label>Nombre de la cuenta</label>
+						            <input type="text" name="account-number" class="form-control" required>
+						          </div>
+					          	<div class="form-group">
+					          	  <label>IBAN</label>
+					          	  <input type="text" name="iban" class="form-control" required>
+					          	</div>
+					          	<div class="form-group">
+					          	  <label>Código SWIFT de 8 o 11 caracteres</label>
+					          	  <input type="text" name="swift-code" class="form-control" id="swift" required>
+					          	  <p class="err-msg" style="display:none;"><i class="fa fa-warning"></i>El código SWIFT es incorrecto</p>
+					          	</div>
+						        </div>
+						      </div>
+						      <div class="modal-footer">
+						        <a href="#" class="btn btn-secondary" id="save-acc-detail">Siguiente</a>
+						      </div>
+						    </div>
+						    <!--End: Add Bank Account: Screen 2 -->
+						  </div>
+						</div>
+						<!--End: Add Bank Account: Screen 1 -->
+
+						<p class="card">No tienes ninguna cuenta bancaria asociada</p>
+					</div>
+					<p class="note">Deutching.com utilizara este número para efectuar reembolsos a tu cuenta si fuera necesario. <span>Ver politica</span></p>
+					<div class="reco-rules">
+						<p class="title">Reglas de solicitus de cobro</p>
+						<div class="rules">
+							<div class="rules-item">
+								<p>Puedes solicitar el cobro de una sesión 10 dias  después de impartirla</p>
+								<p>Recuerda que antes de solicitar un cobro has de haber  acumulado al menos 100€ (o su equivalente) en tu cuenta Deutsching (descontando comisiones)</p>
+							</div>
+							<div class="rules-item">
+								<p>Periodo de solicitud de cobro: Desde el dia 25 hasta el 30 ó 31 de cada mes</p>
+								<p>Recuerda activar tu solicitud de cobro</p>
+								<p>Tus pagos serán enviados previo descuento de las comisiones de deutsching</p>
+							</div>
+							<div class="rules-item">
+								<p>Los pagos se efectúan en un plazao de 10 dias desde su solicitud, y se reflejarán en tu cuenta en un máximo de 18 dias debido a los plazos bancarios</p>
+								<p>Puedes contactarnos en cualquier momento en <a href="mailto:pagos@deutsching.com">pagos@deutsching.com</a></p>
+							</div>
+							<div class="rules-item">
+								<a type="submit" class="btn btn-secondary" href="#">Guardar cambios</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="payment-method tab-content tab-ma-4" style="margin-top: 20px;">
+					<div class="sec-title">
+						<p class="title">Transferencia bancaria</p>
+					</div>
+					<div class="edit-acc">
+						<a href="#" class="btn btn-default">Editar cuenta</a>
+						<p class="card"><span>IBAN</span> *******************4587</p>
+					</div>
+					<p class="note">Deutching.com utilizara este número para efectuar reembolsos a tu cuenta si fuera necesario. <span>Ver politica</span></p>
+					<div class="reco-rules">
+						<p class="title">Reglas de solicitus de cobro</p>
+						<div class="rules">
+							<div class="rules-item">
+								<p>Puedes solicitar el cobro de una sesión 10 dias  después de impartirla</p>
+								<p>Recuerda que antes de solicitar un cobro has de haber  acumulado al menos 100€ (o su equivalente) en tu cuenta Deutsching (descontando comisiones)</p>
+							</div>
+							<div class="rules-item">
+								<p>Periodo de solicitud de cobro: Desde el dia 25 hasta el 30 ó 31 de cada mes</p>
+								<p>Recuerda activar tu solicitud de cobro</p>
+								<p>Tus pagos serán enviados previo descuento de las comisiones de deutsching</p>
+							</div>
+							<div class="rules-item">
+								<p>Los pagos se efectúan en un plazao de 10 dias desde su solicitud, y se reflejarán en tu cuenta en un máximo de 18 dias debido a los plazos bancarios</p>
+								<p>Puedes contactarnos en cualquier momento en <a href="mailto:pagos@deutsching.com">pagos@deutsching.com</a></p>
+							</div>
+							<div class="rules-item">
+								<a type="submit" class="btn btn-secondary" href="#">Guardar cambios</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End: Payment Method -->
+
+				<!-- Start: Transaction Content -->
+				<div class="transaction-section tab-content tab-ma-5">
+					<!-- Start: Transaction Navigation -->
+					<div class="sec-title">
+						<ul class="transact-tabs">
+							<li class="tab-link current" data-tab="tab-tr-1">Ingresos recibidos</li>
+							<li class="tab-link" data-tab="tab-tr-2">Ingresos solicitados</li>
+							<li class="tab-link" data-tab="tab-tr-3">Ingresos previstos</li>
+							<li class="tab-link" data-tab="tab-tr-4">Ingresos sin confirmar</li>
+						</ul>
+					</div>
+					<!-- End: Transaction Navigation -->
+
+					<!-- Start: Income Received Made Content Filled -->
+					<div class="income-received tab-tr-content tab-tr-1 current">
+						<div class="filter-bar">
+							<div class="form-group">
+								<select class="form-control">
+									<option>Todas las clases</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<select class="form-control">
+									<option>2015</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<select class="form-control">
+									<option>Desde: Enero</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<select class="form-control">
+									<option>Hasta: Diciembre</option>
+								</select>
+							</div>
+						</div>
+						<div class="body">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<thead>
+									<tr>
+										<th scope="col">Fecha de pago</th>
+										<th scope="col">Tipo</th>
+										<th scope="col">Descripción</th>
+										<th scope="col">Cantidad</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<p>Jueves</p>
+											<p>19 feb 2015</p>
+										</td>
+										<td>
+										  <p>Pack</p>
+										</td>
+										<td>
+										  <p>Sesiones individuales PACK 6 x 45 mins</p>
+										  <p class="pink-clr">Pack6/45min/19feb2015/HFDT</p>
+										  <p>Alumno: <span>Natalia V.</p>
+										</td>
+										<td>
+										  <p>16,60€</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>Jueves</p>
+											<p>19 feb 2015</p>
+										</td>
+										<td>
+											<p>Prueba</p>
+										</td>
+										<td>
+										  <p>Sesiones individuales de prueba 1 x 30mins</p>
+										  <p class="pink-clr">Pack6/45min/19feb2015/HFDT</p>
+										  <p>Alumno: <span>Hans T.</p>
+										</td>
+										<td>
+										  <p>0€</p>
+										</td>
+									</tr>
+									<tr>
+									  <td>
+									    <p>Viernes</p>
+									    <p>8 may 2015</p>
+									  </td>
+									  <td>
+									    <p>Suelta</p>
+									  </td>
+									  <td>
+									    <p>Sesiones individuales 1 x 60 mins</p>
+									    <p class="pink-clr">IND/60min/8may2015/GFT</p>
+									    <p>Alumno: <span>Carolina Reyes</p>
+									  </td>
+									  <td>
+									    <p>23,30€</p>
+									  </td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="total-amount">
+							  <span class="tot">Total</span>
+							  <span class="amt">291,76€</span>
+							</div>
+						</div>
+						<div class="disclaimer">
+							<p>Teniendo en cuenta que existen unos plazos bancarios de entre 5 y 7 dias para hacer efectiva una transferencia, si pasado ese tiempo no has recibido el pago, pónte en contacto con nosotros en <a href="mailto:pagos@deutsching.com">pagos@deutsching.com</a>
+						</div>
+					</div>
+					<!-- End: Income Received Content Filled -->
+
+					<!-- Start: Income Requested Content Filled -->
+					<div class="income-requested tab-tr-content tab-tr-2">
+						<div class="filter-bar">
+							<div class="form-group">
+								<select class="form-control">
+									<option>Todas las clases</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<select class="form-control">
+									<option>2015</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<select class="form-control">
+									<option>Desde: Enero</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<select class="form-control">
+									<option>Hasta: Diciembre</option>
+								</select>
+							</div>
+						</div>
+						<div class="body">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<thead>
+									<tr>
+										<th scope="col">Fecha de compra</th>
+					          <th scope="col">Fecha de impartició</th>
+					          <th scope="col">Tipo</th>
+					          <th scope="col">Descripción</th>
+					          <th scope="col">Cantidad</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<p>Jueves</p>
+											<p>19 feb 2015</p>
+										</td>
+										<td>
+											<p>Domingo</p>
+											<p>22 may 2015</p>
+										</td>
+										<td>
+										  <p>Pack</p>
+										</td>
+										<td>
+										  <p>Sesiones individuales PACK 6 x 45 mins</p>
+										  <p class="pink-clr">Pack6/45min/19feb2015/HFDT</p>
+										  <p>Alumno: <span>Natalia V.</span></p>
+										</td>
+										<td>
+										  <p>16,60 €</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>Jueves</p>
+											<p>19 feb 2015</p>
+										</td>
+										<td>
+											<p>Sábado</p>
+											<p>21 may 2015</p>
+										</td>
+										<td>
+										  <p>Prueba</p>
+										</td>
+										<td>
+										  <p>Sesiones individuales de prueba 1 x 30 mins</p>
+										  <p class="pink-clr">Pack6/45min/19feb2015/HFDT</p>
+										  <p>Alumno: <span>Hans T.</span></p>
+										</td>
+										<td>
+										  <p>0 €</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>Viernes</p>
+											<p>8 may 2015</p>
+										</td>
+										<td>
+											<p>Domingo</p>
+											<p>8 may 2015</p>
+										</td>
+										<td>
+										  <p>Suelta</p>
+										</td>
+										<td>
+										  <p>Sesiones individuales 1 x 60 mins</p>
+										  <p class="pink-clr">IND/60min/8may2015/GFT</p>
+										  <p>Alumno: <span>Carolina Reyes</span></p>
+										</td>
+										<td>
+										  <p>23,30 €</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="foot-btn">
+								<a href="#" class="btn"><i class="fa fa-check"></i>Ingresos solicitados</a>
+								<div class="total-amount">
+								  <span class="tot">Total</span>
+								  <span class="amt">291,76€</span>
+								</div>
+								<div class="foot-note">
+									<div class="item">
+										<p class="title">Fecha de solicitud</p>
+										<p class="value">24 dic 2015</p>
+									</div>
+									<div class="item">
+										<p class="title">Fecha estimada de cobro</p>
+										<p class="value">15 ene 2016</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End: Income Requested Content Filled -->
+
+					<!-- Start: Income Expected Content Filled -->
+					<div class="income-expected tab-tr-content tab-tr-3">
+						<div class="filter-bar">
+							<div class="form-group">
+								<select class="form-control">
+									<option>Todas las clases</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<select class="form-control">
+									<option>2015</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<select class="form-control">
+									<option>Desde: Enero</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<select class="form-control">
+									<option>Hasta: Diciembre</option>
+								</select>
+							</div>
+						</div>
+							<div class="body">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<thead>
+										<tr>
+											<th scope="col">Fecha de compra</th>
+						          <th scope="col">Fecha de impartició</th>
+						          <th scope="col">Tipo</th>
+						          <th scope="col">Descripción</th>
+						          <th scope="col">Cantidad</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<p>Jueves</p>
+												<p>19 feb 2015</p>
+											</td>
+											<td>
+												<p>Domingo</p>
+												<p>22 may 2015</p>
+											</td>
+											<td>
+											  <p>Pack</p>
+											</td>
+											<td>
+											  <p>Sesiones individuales PACK 6 x 45 mins</p>
+											  <p class="pink-clr">Pack6/45min/19feb2015/HFDT</p>
+											  <p>Alumno: <span>Natalia V.</span></p>
+											</td>
+											<td>
+											  <p>16,60 €</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>Jueves</p>
+												<p>19 feb 2015</p>
+											</td>
+											<td>
+												<p>Sábado</p>
+												<p>21 may 2015</p>
+											</td>
+											<td>
+											  <p>Prueba</p>
+											</td>
+											<td>
+											  <p>Sesiones individuales de prueba 1 x 30 mins</p>
+											  <p class="pink-clr">Pack6/45min/19feb2015/HFDT</p>
+											  <p>Alumno: <span>Hans T.</span></p>
+											</td>
+											<td>
+											  <p>0 €</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>Viernes</p>
+												<p>8 may 2015</p>
+											</td>
+											<td>
+												<p>Domingo</p>
+												<p>8 may 2015</p>
+											</td>
+											<td>
+											  <p>Suelta</p>
+											</td>
+											<td>
+											  <p>Sesiones individuales 1 x 60 mins</p>
+											  <p class="pink-clr">IND/60min/8may2015/GFT</p>
+											  <p>Alumno: <span>Carolina Reyes</span></p>
+											</td>
+											<td>
+											  <p>23,30 €</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>Viernes</p>
+												<p>30 ene 2015</p>
+											</td>
+											<td>
+												<p>Viernes</p>
+												<p>27 feb 2015</p>
+											</td>
+											<td>
+											  <p>Grupal</p>
+											</td>
+											<td>
+											  <p>Sesiones grupales Alexanderplatz A1.1</p>
+											  <p class="pink-clr">GR/AlexanderplatzA1.1/inens/ ...</p>
+											  <p>Alumno: <span>Nicolas D, Natalia V., Miclael S, Martina C</span></p>
+											</td>
+											<td>
+											  <p>251,86 €</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="foot-btn">
+									<div class="warning">
+										<p><i class="fa fa-warning"></i>Todavía no has introducido tus datos en la cuenta bancaria</p>
+										<p>Por favor rellena tu métodode cobro <span>aquí</span></p>
+									</div>
+									<a href="#" class="btn" id="odc"><i class="fa fa-lock"></i>Solicitar cobro</a>
+									<div class="total-amount">
+									  <span class="tot">Total</span>
+									  <span class="amt">291,76€</span>
+									</div>
+								</div>
+							</div>
+					</div>
+					<!-- End: Income Expected Content Filled -->
+
+					<!-- Start: Income Unconfirmed Content Filled -->
+					<div class="income-unconfirmed tab-tr-content tab-tr-4">
+						<div class="filter-bar">
+							<div class="form-group">
+								<select class="form-control">
+									<option>Todas las clases</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<select class="form-control">
+									<option>2015</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<select class="form-control">
+									<option>Desde: Enero</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<select class="form-control">
+									<option>Hasta: Diciembre</option>
+								</select>
+							</div>
+						</div>
+						<div class="body">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<thead>
+									<tr>
+										<th scope="col">Fecha de compra</th>
+					          <th scope="col">Fecha de impartició</th>
+					          <th scope="col">Tipo</th>
+					          <th scope="col">Descripción</th>
+					          <th scope="col">Cantidad</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<p>Viernes</p>
+											<p>22 may 2015</p>
+										</td>
+										<td>
+											<p>CANX prof <i class="fa fa-circle tooltip">
+											<span class="tooltiptxt-right">Cuando eres tu quien cancela una sesion, en deutsching emitimos un bono para el dumno y tu no percibes ingresos por dicha sesion.
+											</span></i>
+											</p>
+					            <p>Domingo</p>
+					            <p>1 jun 2015</p>
+										</td>
+										<td>
+										  <p>Suelta</p>
+										</td>
+										<td>
+										  <p>Sesiones individuales 1 x 45 mins</p>
+										  <p class="pink-clr">IND/90min/22may2015/CVDT</p>
+										  <p>Alumno: <span>Hans T </span></p>
+										</td>
+										<td>
+										  <p>0 €</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>Miércoles</p>
+											<p>15 abr 2015</p>
+										</td>
+										<td>
+											<p>CANX almuno <i class="fa fa-circle tooltip">
+												<span class="tooltiptxt-right">
+												Cuando es el alumno el que cancela un pack, percibes las clases impartidas al precio de individuales o bien de pack inferior si es de application
+												</span></i></p>
+											<p>Domingo</p>
+											<p>1 jun 2015</p>
+										</td>
+										<td>
+										  <p>Pack</p>
+										</td>
+										<td>
+										  <p>Sesiones individuales PACK 12 x 90 mins</p>
+										  <p class="pink-clr">Pack6/90min/15abr2015/CDRF</p>
+										  <p>Alumno: <span>Cristian F</span></p>
+										</td>
+										<td>
+										  <p>134 €</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>Viernes</p>
+											<p>8 may 2015</p>
+										</td>
+										<td>
+											<p>Domingo</p>
+											<p>8 may 2015</p>
+										</td>
+										<td>
+										  <p>Suelta</p>
+										</td>
+										<td>
+										  <p>Sesiones individuales 1 x 60 mins</p>
+										  <p class="pink-clr">IND/60min/8may2015/GFT</p>
+										  <p>Alumno: <span>Carolina Reyes</span></p>
+										</td>
+										<td>
+										  <p>294,86 €</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="total-amount">
+							  <span class="tot">Total</span>
+							  <span class="amt">444,06 €</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="income-unconfirmed tab-tr-content tab-tr-4" style="margin-top: 80px;">
+						<div class="filter-bar">
+							<div class="form-group">
+								<select class="form-control">
+									<option>Todas las clases</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<select class="form-control">
+									<option>2015</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<select class="form-control">
+									<option>Desde: Enero</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<select class="form-control">
+									<option>Hasta: Diciembre</option>
+								</select>
+							</div>
+						</div>
+						<div class="body">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<thead>
+									<tr>
+										<th scope="col">Fecha de compra</th>
+					          <th scope="col">Fecha de impartició</th>
+					          <th scope="col">Tipo</th>
+					          <th scope="col">Descripción</th>
+					          <th scope="col">Cantidad</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<p>Viernes</p>
+											<p>22 may 2015</p>
+										</td>
+										<td>
+					            <p>Domingo</p>
+					            <p>1 jun 2015</p>
+										</td>
+										<td>
+										  <p>Suelta</p>
+										</td>
+										<td>
+										  <p>Sesiones individuales 1 x 45 mins</p>
+										  <p class="pink-clr">IND/90min/22may2015/CVDT</p>
+										  <p>Alumno: <span>Hans T </span></p>
+										</td>
+										<td>
+										  <p>17,50 €</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>Miércoles</p>
+											<p>15 abr 2015</p>
+										</td>
+										<td>
+											<p>Sin horario</p>
+											<p class="unconfirm-class">Sin horario</p>
+										</td>
+										<td>
+										  <p>Pack</p>
+										  <p class="unconfirm-class">Regao</p>
+										</td>
+										<td>
+										  <p>Sesiones individuales PACK 12 x 90 mins</p>
+										  <p class="pink-clr">Pack6/90min/15abr2015/CDRF</p>
+										  <p>Alumno: <span>Cristian F</span></p>
+										</td>
+										<td>
+										  <p>134 €</p>
+										  <p class="unconfirm-class">-3,50 €
+										  <i class="fa fa-circle tooltip">
+										  <span class="tooltiptxtsmall tooltiptxt-right">Las sesiones de regalo tienen un coste mínimo que corre de tu cuenta
+										  </span></i>
+										  </p>
+										  <p class="inner-total">Total: 131, 70 €</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>Viernes</p>
+											<p>8 may 2015</p>
+										</td>
+										<td>
+											<p>Domingo</p>
+											<p>8 may 2015</p>
+										</td>
+										<td>
+										  <p>Suelta</p>
+										</td>
+										<td>
+										  <p>Sesiones individuales 1 x 60 mins</p>
+										  <p class="pink-clr">IND/60min/8may2015/GFT</p>
+										  <p>Alumno: <span>Carolina Reyes</span></p>
+										</td>
+										<td>
+										  <p>294,86 €</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="total-amount">
+							  <span class="tot">Total</span>
+							  <span class="amt">444,06 €</span>
+							</div>
+						</div>
+					</div>
+					<!-- End: Income Unconfirmed Content Filled -->
+				</div>
+				<!-- End: Transaction Content -->
+
+				<!-- Start: Deactivate account Content -->
+				<div class="deactivate-account tab-content tab-ma-6">
+					<div class="sec-title">
+						<p class="title">Estás seguro de que quieres desactivar tu cuenta?</p>
+					</div>
+					<div class="form-group">
+						<input type="checkbox" id="deact" name="deactivate">
+						<label for="deact">si, estoy seguro de desactivar mi cuenta en Deutsching</label>
+					</div>
+					<div class="form-btn">
+						<a class="btn btn-secondary" href="#">Deactivar cuenta</a>
+					</div>
+				</div>
+				<!-- End: Deactivate account Content -->
+
+			</div>
+		</div>
+	</section>
+</div>
+<!-- End: Classes -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="assets/js/jquery.fancybox.js" ></script>
+<script src="assets/js/script.js" ></script>
+
+</body>
+</html>

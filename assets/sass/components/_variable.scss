@@ -1,0 +1,73 @@
+$body-font:Arial, Helvetica, sans-serif;
+$body-fontSize:14px;
+
+/*Color*/
+$body-bg: #fff;
+$header-bg:#333 !default;
+$theme-color:#FF1C5A;
+$second-color:#24B287;
+$blue-second:#64D2FD;
+$magenta-second: #FF6892;
+
+/*button*/
+$primary-bg:$second-color;
+$primary-border-color:$second-color;
+$primary-color:#fff;
+
+/*secondary*/
+$secondary-bg:$theme-color;
+$secondary-border-color:$theme-color;
+$secondary-color:#fff;
+
+/*default*/
+$default-bg:#fff;
+$default-border-color:#666;
+$default-color:#666;
+
+/*blue*/
+$blue-bg:$blue-second;
+$blue-border-color:$blue-second;
+$blue-color:#fff;
+
+
+/*Grid and column*/
+$site-width:1012px;
+$site-width-ipad:750px;
+$site-width-mobile:auto;
+
+/*Status Color*/
+$status:#ECEDED;
+$statusActive:#24B287;
+
+/*Modal-box*/
+$modal-width:700px;
+
+
+
+/*Mixins*/
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin round($width, $height, $radius ) {
+  width:$width;
+  height:$height;
+  overflow:hidden;
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}

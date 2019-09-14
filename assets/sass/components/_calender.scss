@@ -1,0 +1,96 @@
+.calender-wrapp {
+
+	.header {
+		padding-bottom:20px;
+
+		table {
+			tr {
+				td, th {
+					a {
+						color:$theme-color;
+					}
+
+					&[align="right"]{
+						text-align:right;
+					}
+					&[align="center"]{
+						text-align:center;
+					}
+				}
+				th {
+					font-size:17px;
+				}
+			}
+		}
+	}
+
+	.body {
+		width:100%;
+
+		@media (max-width:1023px) {
+			overflow:hidden;
+			overflow-x:auto;
+			padding-bottom:20px;
+		}
+
+		table {
+
+			thead {
+				tr {
+					th {
+						text-align:center;
+						border-bottom:1px solid #9C9E9F;
+						padding:0px 5px;
+						padding-bottom:10px;
+						white-space:nowrap;
+					}
+				}
+			}
+
+			tbody {
+				tr {
+					td {
+						background-color: #ECEDED;
+						border: 2px solid #fff;
+						padding: 5px 5px;
+
+						&:first-child {
+							background-color: #fff;
+							text-align:right;
+						}
+						&.available {
+							background-color: #B7E5D7;
+							color:#fff;
+						}
+						&.booked {
+							background-color: $theme-color;
+							color:#fff;
+						}
+						&.busy {
+							background-color: #C6C7C8;
+							color:#fff;
+						}
+						&.confirmed {
+							background-color: #FF6892;
+							color: #fff;
+						}
+						&.grupal {
+							background-color: #64D2FD;
+							color: #fff;
+						}
+					}
+
+					&:nth-child(4n) {
+						td {
+							border-bottom: 5px solid #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&:after {
+		@extend .after;
+	}
+}
